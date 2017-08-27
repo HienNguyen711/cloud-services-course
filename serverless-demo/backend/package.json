@@ -1,0 +1,10 @@
+{
+  "name": "serverless-store",
+  "version": "1.0.0",
+  "description": "Backend implementation of the Serverless Store.",
+  "author": "hien nguyen",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^1.19.0",
+    "aws-sdk": "^2.100.0"
+  }
+}

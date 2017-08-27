@@ -1,0 +1,43 @@
+service: serverless-store
+
+custom:
+  awsAccountId: 349264414701  
+  
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: dev
+  region: us-east-1
+  memorySize: 128
+  timeout: 30
+  environment:
+    
+  iamRoleStatements:
+   
+    - Effect: "Allow"
+      Action: "*"
+      Resource: [
+        "arn:aws:dynamodb:us-east-1:349264414701:table/Products",
+        "arn:aws:dynamodb:us-east-1:349264414701:table/ShoppingCart"
+       ]
+functions:
+  products:
+    handler: functions/products.handler
+    events:
+      - http: GET products
+      - http:
+          method: GET
+          path: productsAuth 
+      - http:
+          method: POST
+          path: cart  
+      - http:
+          method: PUT
+          path: checkout          
+      - http: OPTIONS checkout      
+  comments:
+    handler: functions/comments.handler
+    events:
+      
+          

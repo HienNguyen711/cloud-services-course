@@ -1,0 +1,101 @@
+
+
+
+Messaging and notification 
+SNS
+
+
+Backend service
+Lambda
+API gateway
+
+
+Database services
+DynamoDB
+
+
+
+
+
+Project 
+Serverless architecture of online store
+
++ List products
++ Product detail with user rating
++ Add product to a shopping cart 
++ Create account and login (maybe do not need to do )
+
+front end : React
+
+
+
+Project architecture : Nanoservice, Microservice, Monotlith, Graph > chose monolith
+
+
+backend : monolith architecture
+
+
+
+
+
+
+
+
+
+
+...test serverless notification Iot > serverless logs --function comments
+
+-------test and deploy : serverless deploy 
+serverless invoke --function nameoffunction
+
+
+
+----show info : serverless info
+
+
+----scrafolding a serverless project : > 
+> serverless install --url <github project url>
+> serverless install / --url ...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========== ADD TO PRESENTATION =============
+ + automate website publishing with with aws cli 
+
+
+
+
+
+
+
+
+
+
+ ----- AWS Cognito-------
+
+Pool Id us-east-1_JXARcKCLN
+Pool ARN arn:aws:cognito-idp:us-east-1:349264414701:userpool/us-east-1_JXARcKCLN
+
+app client id : 28fodj30ubsraofti9sk6teb56
+ IdentityPoolId: 'us-east-1:6028e0cf-c96a-462f-9d16-c07d53ec1eec',
+
+
+
+
+
+ ========IOT endpoint==========
+ + endpoint : a2pnoxmgqhmpn2.iot.us-east-1.amazonaws.com
+
+
+ + policyARN: arn:aws:iot:us-east-1:349264414701:policy/iot-policy
