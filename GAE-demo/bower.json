@@ -1,0 +1,17 @@
+{
+  "name": "productapp",
+  "description": "Product app example to demonstrate GCP services, especially GAE with Node.js environment",
+  "main": "",
+  "authors": [
+    "Hien nguyen"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/GoogleCloudPlatform/nodejs-getting-started",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
