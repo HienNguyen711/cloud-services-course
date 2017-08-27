@@ -1,0 +1,12 @@
+extends ../base.pug
+
+block content
+  h1 Send email
+  p Express.js + Sendgrid on Google App Engine.
+  hr
+  if sent
+    p Email sent!
+  else
+    form(name="mail", action="/mail", method="post")
+      input(type="email", placeholder="Enter your email to send yourself a Hello World message", name="email", style="width: 50%; margin-right: 15px;")
+      input(type="submit", value="Send")

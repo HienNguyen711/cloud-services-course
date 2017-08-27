@@ -1,0 +1,30 @@
+extends ../base.pug
+
+block content
+  h3 #{action} product
+  form(method="POST", enctype="multipart/form-data")
+    .form-group
+      label(for="title") IdNumber
+      input.form-control(type="text", name="idnumber", id="idnumber", value=product.idnumber)
+    .form-group
+      label(for="author") Name
+      input.form-control(type="text", name="author", id="author", value=product.author)
+    .form-group
+      label(for="publishedDate") Date Published
+      input.form-control(type="text", name="publishedDate", id="publishedDate", value=product.publishedDate)
+    .form-group
+      label(for="description") Description
+      input.form-control(type="text", name="description", id="description", value=product.description)
+    .form-group
+      label(for="image") Cover Image
+      input.form-control(type="file", name="image", id="image")
+    .form-group.hidden
+      label(for="imageUrl") Cover Image URL
+      input.form-control(type="text", name="imageUrl", id="imageUrl", value=product.imageUrl)
+    .form-group.hidden
+      label(for="createdBy") Created by
+      input.form-control(type="text", name="createdBy", id="createdBy", value=product.createdBy)
+    .form-group.hidden
+      label(for="createdById") Created by ID
+      input.form-control(type="text", name="createdById", id="createdById", value=product.createdById)
+    button.btn.btn-success(type="submit") Save

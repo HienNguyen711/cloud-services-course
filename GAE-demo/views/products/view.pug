@@ -1,0 +1,43 @@
+extends ../base.pug
+
+block content
+  h3 Product
+    small
+
+  .btn-group
+    a(href=`/products/${product.id}/edit`, class='btn btn-primary btn-sm')
+      i.glyphicon.glyphicon-edit
+      span  Edit product
+    a(href=`/products/${product.id}/delete`, class='btn btn-danger btn-sm')
+      i.glyphicon.glyphicon-trash
+      span  Delete product
+
+  .media
+    .media-left
+      img(src=product.imageUrl || "http://placekitten.com/g/128/192")
+    .media-body
+      h4= product.name
+        | &nbsp;
+        small= product.publishedDate
+      h5 By #{product.author||'unknown'}
+      p= product.description
+      small Added by #{product.createdBy}
+
+
+
+
+  h1 Send email with the information of the product details
+  p Send your product details for your customer
+  hr
+  if sent
+    p Successfully sent email!
+  else
+    form(name="mail", action="/mail", method="post")
+      input(type="email", placeholder="Enter customer email", name="email", style="width: 50%; margin-right: 15px;")
+      input(type="text" placeholder="Enter subject of the email" name="subject")
+      input(type="text" placeholder="Enter content of the email" name="content")
+      input(type="submit", value="Send")
+
+
+
+
