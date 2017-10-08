@@ -1,5 +1,4 @@
 # cloud-services-course
-Stack
 ## AWS Serverless demo 
 + Serverless framework https://serverless.com/
 + Back end : Node.js , Front end : ReactJS
