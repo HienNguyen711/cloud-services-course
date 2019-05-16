@@ -23,5 +23,3 @@ Project writen in Node.js using cloud services from AWS and GCP
 + Memcached from https://redislabs.com/
 
 
-
-<No longer maintained>
