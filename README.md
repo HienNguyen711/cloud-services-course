@@ -1,7 +1,9 @@
 # cloud-services-course
+
+Project writen in Node.js using cloud services from AWS and GCP 
+
 ## AWS Serverless demo 
 + Serverless framework https://serverless.com/
-+ Back end : Node.js , Front end : ReactJS
 + Mail service 
 + AWS S3 , AWS DynamoDB
 + AWS Cognito
@@ -9,15 +11,17 @@
 + AWS SNS 
 + AWS API gateway
 + Lambda functions 
-+ Restful API service 
++ Restful API service
 + Monolith architecture
 
 ## GAE demo
-+ Node.js 
-+ GAE flexible environment 
++ GAE flexible environment (for Node.js)
 + Oauth 
 + Sendgrid API 
 + Google cloud datastorage 
 + GAE 
 + Memcached from https://redislabs.com/
 
+
+
+<No longer maintained>
